@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+header{
+    height: 80px;
+    width: 100vw;
+    background-color: #9C9290;
+    display: inline-flex;
+    position: sticky;
+    top:0;
+    justify-content: space-evenly;
+}
+
+li{
+    text-decoration: none;
+    display: inline;
+    padding-left: 5px;
+}
