@@ -1,3 +1,5 @@
+/* General Section */
+
 *{
     margin: 0;
     padding: 0;
@@ -9,6 +11,8 @@ body{
     background-color: #FDF8E9;
 }
 
+/* Header Section */
+
 header{
     height: 80px;
     width: 100vw;
@@ -17,6 +21,7 @@ header{
     position: sticky;
     top:0;
     justify-content: space-evenly;
+    z-index: 10000;
 }
 
 .logo{
@@ -71,26 +76,36 @@ li:last-child{
     border-right: 1px solid #000;
 }
 
+/* Page Container Section */
+
 .grid-page-container{
     display: grid;
     grid-columns: repeat(5, 600px);
 }
 
+/* Page Sections Section */
+
 .grid-container-section{
     display: grid;
-    grid-template-columns: minmax(150px,250px) minmax(350px,650px);
+    grid-template-columns: minmax(150px,270px) minmax(450px,750px);
+    grid-template-rows: minmax(150px,510px);
     justify-content: center;
-    gap: 10px;
+    gap: 20px;
     padding: 5px;
+    padding-top: 30px;
 }
 
 .grid-container-section-r{
     display: grid;
-    grid-template-columns: minmax(350px,650px) minmax(150px,250px);
+    grid-template-columns: minmax(350px,750px) minmax(150px,270px);
+    grid-template-rows: minmax(150px,510px);
     justify-content: center;
     gap: 10px;
     padding: 5px;
+    padding-top: 30px;
 }
+
+/* Div img Section Left */
 
 .atachment__section__image-left{
     background-color: #9C9290;
@@ -99,10 +114,34 @@ li:last-child{
 
 }
 
+.atachment__section__image-left h2{
+    font-size: 55px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.atachment__section__image-left-1 h2{
+    transform: translate(6.5vw,48vh)  rotate(-90deg);
+}
+
+.atachment__section__image-left-2 h2{
+    width: 420px;
+    transform: translate(-1.5vw,32vh)  rotate(-90deg);
+}
+
+.atachment__section__image-left-3 h2{
+    transform: translate(6vw,48vh)  rotate(-90deg);
+}
+
+
+/* Div img Section Right */
+
+
 .atachment__section__image-right{
     background-color: #9C9290;
     min-width: 150px;
     min-height: 250px;
+
 }
 
 .atachment__section__image-right-1{
@@ -110,4 +149,21 @@ li:last-child{
     background-attachment: fixed;
     background-size: contain;
     background-clip: border-box;
+}
+
+.atachment__section__image-right{
+    font-size: 55px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.atachment__section__image-right-1 h2{
+    transform: translate(6.5vw,48vh)  rotate(-90deg);
+}
+
+.atachment__section__image-right-2 h2{
+    font-size: 55px;
+    font-weight: 600;
+    width: 450px;
+    transform: translate(-2.5vw,30vh)  rotate(-90deg);
 }
