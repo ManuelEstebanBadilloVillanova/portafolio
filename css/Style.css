@@ -1,8 +1,12 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: 'Lato',sans-serif;
     box-sizing: border-box;
+}
+
+body{
+    background-color: #FDF8E9;
 }
 
 header{
@@ -15,8 +19,95 @@ header{
     justify-content: space-evenly;
 }
 
+.logo{
+    background-color: #eeeded;
+    display: flex;
+    height: 80px;
+    width: 140px;
+    position: relative;
+    left: -30px;
+    transition: .5s;
+}
+
+.logo:hover{
+    background-color: #eeeded;
+    display: flex;
+    height: 82px;
+    width: 160px;
+    position: relative;
+    left: -30px;
+    transition: .5s;
+}
+
+.logo h2{
+    position: relative;
+    display: inline-flex;
+    justify-content: space-evenly;
+    top: 7px;
+}
+
+ul{
+    display: inline-flex;
+    list-style: none;
+    display: flex;
+}
+
 li{
+    font-size: 16px;
     text-decoration: none;
-    display: inline;
-    padding-left: 5px;
+    padding: 0 10px;
+    position: relative;
+    top: 30.5px;
+    left: 150px;
+    border-left: 1px solid #000;
+    transition: 0.5s;
+}
+
+li:hover{
+    font-size: 18.5px;
+}
+
+li:last-child{
+    border-right: 1px solid #000;
+}
+
+.grid-page-container{
+    display: grid;
+    grid-columns: repeat(5, 600px);
+}
+
+.grid-container-section{
+    display: grid;
+    grid-template-columns: minmax(150px,250px) minmax(350px,650px);
+    justify-content: center;
+    gap: 10px;
+    padding: 5px;
+}
+
+.grid-container-section-r{
+    display: grid;
+    grid-template-columns: minmax(350px,650px) minmax(150px,250px);
+    justify-content: center;
+    gap: 10px;
+    padding: 5px;
+}
+
+.atachment__section__image-left{
+    background-color: #9C9290;
+    min-width: 150px;
+    min-height: 250px;
+
+}
+
+.atachment__section__image-right{
+    background-color: #9C9290;
+    min-width: 150px;
+    min-height: 250px;
+}
+
+.atachment__section__image-right-1{
+    background-image: url(https://i.pinimg.com/736x/ad/34/d9/ad34d9975aed75f4d6358fdfd0bf37a4.jpg);
+    background-attachment: fixed;
+    background-size: contain;
+    background-clip: border-box;
 }
